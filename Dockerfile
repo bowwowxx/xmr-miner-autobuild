@@ -31,4 +31,4 @@ RUN   apk --no-cache upgrade && \
 ADD run.sh /tmp/cpuminer-multi/run.sh
 WORKDIR    /tmp/cpuminer-multi
 
-CMD ./run.sh
+CMD chmod +x run.sh && ./run.sh
