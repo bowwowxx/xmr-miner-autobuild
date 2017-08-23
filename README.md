@@ -3,7 +3,7 @@ for testing...
 
 ### miner start
 ```sh
-docker run -idt --name=xmr02 -e THREADS=4 bowwow/xmr-miner-autobuild
+docker run -idt --restart=always --name=nasbook -e THREADS=4 -e WORKER=nasbook bowwow/xmr-miner-autobuild
 ```
 
 - -e POOL stratum+tcp://xmr-asia1.nanopool.org:14444
