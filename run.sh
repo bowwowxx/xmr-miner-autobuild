@@ -8,5 +8,5 @@ echo ${WORKER:=$HOSTNAME}
 
 ./minerd \
     -o $POOL \
-    -u $ADDRESS.$PAYMENTID.WORKER \
+    -u $ADDRESS.$PAYMENTID.$WORKER \
     -p z --threads $THREADS
